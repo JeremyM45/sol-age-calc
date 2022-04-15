@@ -94,4 +94,7 @@ export class Person {
       this.saturnYearsOver = parseFloat(this.saturnYearsOver);
     }
   }
+  uranusYears() {
+    
+  }
 }
