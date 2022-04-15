@@ -99,5 +99,7 @@ export class Person {
     this.uranusAge = parseFloat(this.uranusAge);
     this.uranusYearsLeft = (this.yearsLeft / 84.75).toFixed(2);
     this.uranusYearsLeft = parseFloat(this.uranusYearsLeft);
+    this.uranusYearsOver = (this.yearsOver / 84.75).toFixed(2);
+    this.uranusYearsOver = parseFloat(this.uranusYearsOver);
   }
 }
