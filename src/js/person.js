@@ -10,6 +10,9 @@ export class Person {
       case "West Asian":
         this.lifeExpect = 77;
         break;
+      case "South Asian":
+        this.lifeExpect = 71;
+        break;
     }
   }
 }
