@@ -76,5 +76,6 @@ export class Person {
   }
   jupiterYears()  {
     this.jupiterAge = Math.round(this.earthYears / 11.86);
+    this.jupiterYearsLeft = Math.round(this.yearsLeft / 11.86);
   }
 }
