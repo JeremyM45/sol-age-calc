@@ -35,7 +35,7 @@ export class Person {
         this.lifeExpect = 76;
         break;
     }
-    if  (this.income > 60000) {
+    if  (this.income > 80000) {
       this.lifeExpect += 4;
     } else if (this.income < 30000) {
       this.lifeExpect -= 4;

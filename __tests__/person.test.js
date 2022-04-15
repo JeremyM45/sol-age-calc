@@ -74,7 +74,7 @@ describe('Person.lifeExpectancy', ()  =>  {
     expect(newPerson.lifeExpect).toEqual(76);
   });
   test('it should increase lifeExpect by 4 years if income over 60000', ()  =>  {
-    const newPerson = new Person(0, "", 60001)
+    const newPerson = new Person(0, "", 80001)
     newPerson.lifeExpectancy();
     expect(newPerson.lifeExpect).toEqual(76);
   });
