@@ -69,5 +69,6 @@ export class Person {
   marsYears() {
     this.marsAge = Math.round(this.earthYears / 1.88);
     this.marsYearsLeft = Math.round(this.yearsLeft / 1.88);
+    this.marsYearsOver = Math.round(this.yearsOver / 1.88);
   }
 }
