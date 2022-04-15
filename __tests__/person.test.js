@@ -151,3 +151,20 @@ describe('Person.jupiterYears', ()  =>  {
     expect(newPerson.jupiterYearsOver).toEqual(0.34);
   });
 });
+describe('Person.saturnYears', ()  =>  {
+  test('it should calc saturnAge based on earthYears', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.saturnYears();
+    expect(newPerson.saturnAge).toEqual(1.69);
+  });
+  test('it should calc saturnYearsLeft based on yearsLeft', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.saturnYears();
+    expect(newPerson.saturnYearsLeft).toEqual(0.72);
+  });
+  test('it should calc saturnYearsOver based on yearsOver', () =>  {
+    const newPerson = new Person(75, "South Asian", 40000);
+    newPerson.saturnYears();
+    expect(newPerson.saturnYearsOver).toEqual(0.14);
+  });
+});

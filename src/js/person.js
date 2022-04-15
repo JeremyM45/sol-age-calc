@@ -80,7 +80,10 @@ export class Person {
       this.jupiterYearsLeft = Math.round(this.yearsLeft / 11.86);
     } else  {
       this.jupiterYearsOver = (this.yearsOver / 11.86).toFixed(2)
-      this.jupiterYearsOver = parseFloat(this.jupiterYearsOver)
+      this.jupiterYearsOver = parseFloat(this.jupiterYearsOver);
     }
+  }
+  saturnYears() {
+
   }
 }
