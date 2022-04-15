@@ -46,7 +46,7 @@ export class Person {
   yearsLeftOrOver() {
     if (this.earthYears < this.lifeExpect)  {
       this.yearsLeft =  this.lifeExpect - this.earthYears
-    } else if (this.earthYears > this.lifeExpect) {
+    } else {
       this.yearsOver = this.earthYears - this.lifeExpect
     }
   }
@@ -73,5 +73,8 @@ export class Person {
     } else {
       this.marsYearsOver = Math.round(this.yearsOver / 1.88);
     }
+  }
+  jupiterYears()  {
+
   }
 }

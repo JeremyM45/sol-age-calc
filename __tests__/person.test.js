@@ -134,3 +134,20 @@ describe('Person.marsYears', ()  =>  {
     expect(newPerson.marsYearsOver).toEqual(2);
   });
 });
+describe('Person.jupiterYears', ()  =>  {
+  test('it should calc jupiterAge based on earthYears', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.jupiterYears();
+    expect(newPerson.jupiterAge).toEqual(27);
+  });
+  test('it should calc jupiterYearsLeft based on yearsLeft', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.jupiterYears();
+    expect(newPerson.jupiterYearsLeft).toEqual(11);
+  });
+  test('it should calc jupiterYearsOver based on yearsOver', () =>  {
+    const newPerson = new Person(75, "South Asian", 40000);
+    newPerson.jupiterYears();
+    expect(newPerson.jupiterYearsOver).toEqual(2);
+  });
+});
