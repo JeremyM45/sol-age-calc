@@ -22,6 +22,9 @@ export class Person {
       case "Sub-Saharan African":
         this.lifeExpect = 64;
         break;
+      case "Western European":
+        this.lifeExpect = 79;
+        break;
     }
   }
 }
