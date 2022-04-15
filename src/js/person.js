@@ -3,6 +3,8 @@ export class Person {
     this.earthYears = age;
     this.ethnicity = ethnicity;
     this.income = income
-
+  }
+  lifeExpectancy()  {
+    
   }
 }
