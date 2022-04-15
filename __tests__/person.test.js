@@ -86,34 +86,51 @@ describe('Person.yearsLeftOrOver',  ()  =>  {
 describe('Person.mercuryYears', ()  =>  {
   test('it should calc mercuryAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.mercuryYears()
+    newPerson.mercuryYears();
     expect(newPerson.mercuryAge).toEqual(208)
   });
   test('it should calc mercuryYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.mercuryYears()
+    newPerson.mercuryYears();
     expect(newPerson.mercuryYearsLeft).toEqual(88);
   });
   test('it should calc mercuryYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.mercuryYears()
+    newPerson.mercuryYears();
     expect(newPerson.mercuryYearsOver).toEqual(17);
   });
 });
 describe('Person.venusYears', ()  =>  {
   test('it should calc venusAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.venusYears()
-    expect(newPerson.venusAge).toEqual(81)
+    newPerson.venusYears();
+    expect(newPerson.venusAge).toEqual(81);
   });
   test('it should calc venusYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.venusYears()
+    newPerson.venusYears();
     expect(newPerson.venusYearsLeft).toEqual(34);
   });
   test('it should calc venusYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.venusYears()
+    newPerson.venusYears();
     expect(newPerson.venusYearsOver).toEqual(6);
+  });
+});
+describe('Person.marsYears', ()  =>  {
+  test('it should calc marsAge based on earthYears', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.marsYears();
+    expect(newPerson.marsAge).toEqual(27);
+  });
+  test('it should calc marsYearsLeft based on yearsLeft', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.marsYears();
+    expect(newPerson.marsYearsLeft).toEqual(11);
+  });
+  test('it should calc marsYearsOver based on yearsOver', () =>  {
+    const newPerson = new Person(75, "South Asian", 40000);
+    newPerson.marsYears();
+    expect(newPerson.marsYearsOver).toEqual(2);
   });
 });
