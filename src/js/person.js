@@ -88,5 +88,7 @@ export class Person {
     this.saturnAge = parseFloat(this.saturnAge);
     this.saturnYearsLeft = (this.yearsLeft / 29.5).toFixed(2);
     this.saturnYearsLeft = parseFloat(this.saturnYearsLeft);
+    this.saturnYearsOver = (this.yearsOver / 29.5).toFixed(2);
+    this.saturnYearsOver = parseFloat(this.saturnYearsOver);
   }
 }
