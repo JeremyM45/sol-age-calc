@@ -3,6 +3,7 @@ export class Person {
     this.earthYears = age;
     this.ethnicity = ethnicity;
     this.income = income
+    this.lifeExpectancy();
   }
   lifeExpectancy()  {
     this.lifeExpect = 72
@@ -40,6 +41,7 @@ export class Person {
     } else if (this.income < 30000) {
       this.lifeExpect -= 4;
     }
+    this.yearsLeftOrOver();
   }
   yearsLeftOrOver() {
     if (this.earthYears < this.lifeExpect)  {
@@ -47,5 +49,8 @@ export class Person {
     } else if (this.earthYears > this.lifeExpect) {
       this.yearsOver = this.earthYears - this.lifeExpect
     }
+  }
+  mercuryYears()  {
+    
   }
 }
