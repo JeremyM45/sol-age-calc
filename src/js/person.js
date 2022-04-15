@@ -108,6 +108,7 @@ export class Person {
   neptuneYears()  {
     this.neptuneAge = (this.earthYears / 166.67).toFixed(2);
     this.neptuneAge = parseFloat(this.neptuneAge);
-    this.neptuneYearsLeft = parseFloat((this.yearsLeft / 166.67).toFixed(2));
+    this.neptuneYearsLeft = parseFloat((this.yearsLeft / 166.67).toFixed(3));
+    this.neptuneYearsOver = parseFloat((this.yearsOver / 166.67).toFixed(3));
   }
 }

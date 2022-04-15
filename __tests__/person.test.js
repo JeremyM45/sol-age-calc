@@ -194,7 +194,7 @@ describe('Person.neptuneYears', ()  =>  {
   test('it should calc neptuneYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     newPerson.neptuneYears();
-    expect(newPerson.neptuneYearsLeft).toEqual(0.13);
+    expect(newPerson.neptuneYearsLeft).toEqual(0.126);
   });
   test('it should calc neptuneYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
