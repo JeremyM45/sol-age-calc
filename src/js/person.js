@@ -28,6 +28,9 @@ export class Person {
       case "Eastern European":
         this.lifeExpect = 69;
         break;
+      case "North American":
+        this.lifeExpect = 78;
+        break;
     }
   }
 }
