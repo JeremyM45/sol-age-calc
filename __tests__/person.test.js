@@ -185,3 +185,20 @@ describe('Person.uranusYears', ()  =>  {
     expect(newPerson.uranusYearsOver).toEqual(0.05);
   });
 });
+describe('Person.neptuneYears', ()  =>  {
+  test('it should calc neptuneAge based on earthYears', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.neptuneYears();
+    expect(newPerson.neptuneAge).toEqual(0.3);
+  });
+  test('it should calc neptuneYearsLeft based on yearsLeft', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.neptuneYears();
+    expect(newPerson.neptuneYearsLeft).toEqual(0.13);
+  });
+  test('it should calc neptuneYearsOver based on yearsOver', () =>  {
+    const newPerson = new Person(75, "South Asian", 40000);
+    newPerson.neptuneYears();
+    expect(newPerson.neptuneYearsOver).toEqual(0.024);
+  });
+});

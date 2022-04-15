@@ -105,4 +105,7 @@ export class Person {
       this.uranusYearsOver = parseFloat(this.uranusYearsOver);
     }
   }
+  neptuneYears()  {
+    
+  }
 }
