@@ -35,5 +35,8 @@ export class Person {
         this.lifeExpect = 76;
         break;
     }
+    if  (this.income > 60000) {
+      this.lifeExpect += 4;
+    }
   }
 }
