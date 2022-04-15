@@ -4,6 +4,13 @@ export class Person {
     this.ethnicity = ethnicity;
     this.income = income;
     this.lifeExpectancy();
+    this.mercuryYears();
+    this.venusYears();
+    this.marsYears();
+    this.jupiterYears();
+    this.saturnYears();
+    this.uranusYears();
+    this.neptuneYears();
   }
   lifeExpectancy()  {
     this.lifeExpect = 72;

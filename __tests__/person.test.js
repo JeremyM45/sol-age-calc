@@ -86,119 +86,98 @@ describe('Person.yearsLeftOrOver',  ()  =>  {
 describe('Person.mercuryYears', ()  =>  {
   test('it should calc mercuryAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.mercuryYears();
     expect(newPerson.mercuryAge).toEqual(208)
   });
   test('it should calc mercuryYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.mercuryYears();
     expect(newPerson.mercuryYearsLeft).toEqual(88);
   });
   test('it should calc mercuryYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.mercuryYears();
     expect(newPerson.mercuryYearsOver).toEqual(17);
   });
 });
 describe('Person.venusYears', ()  =>  {
   test('it should calc venusAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.venusYears();
     expect(newPerson.venusAge).toEqual(81);
   });
   test('it should calc venusYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.venusYears();
     expect(newPerson.venusYearsLeft).toEqual(34);
   });
   test('it should calc venusYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.venusYears();
     expect(newPerson.venusYearsOver).toEqual(6);
   });
 });
 describe('Person.marsYears', ()  =>  {
   test('it should calc marsAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.marsYears();
     expect(newPerson.marsAge).toEqual(27);
   });
   test('it should calc marsYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.marsYears();
     expect(newPerson.marsYearsLeft).toEqual(11);
   });
   test('it should calc marsYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.marsYears();
     expect(newPerson.marsYearsOver).toEqual(2);
   });
 });
 describe('Person.jupiterYears', ()  =>  {
   test('it should calc jupiterAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.jupiterYears();
     expect(newPerson.jupiterAge).toEqual(4);
   });
   test('it should calc jupiterYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.jupiterYears();
     expect(newPerson.jupiterYearsLeft).toEqual(2);
   });
   test('it should calc jupiterYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.jupiterYears();
     expect(newPerson.jupiterYearsOver).toEqual(0.34);
   });
 });
 describe('Person.saturnYears', ()  =>  {
   test('it should calc saturnAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.saturnYears();
     expect(newPerson.saturnAge).toEqual(1.69);
   });
   test('it should calc saturnYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.saturnYears();
     expect(newPerson.saturnYearsLeft).toEqual(0.71);
   });
   test('it should calc saturnYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.saturnYears();
     expect(newPerson.saturnYearsOver).toEqual(0.14);
   });
 });
 describe('Person.uranusYears', ()  =>  {
   test('it should calc uranusAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.uranusYears();
     expect(newPerson.uranusAge).toEqual(0.59);
   });
   test('it should calc uranusYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.uranusYears();
     expect(newPerson.uranusYearsLeft).toEqual(0.25);
   });
   test('it should calc uranusYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.uranusYears();
     expect(newPerson.uranusYearsOver).toEqual(0.05);
   });
 });
 describe('Person.neptuneYears', ()  =>  {
   test('it should calc neptuneAge based on earthYears', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.neptuneYears();
     expect(newPerson.neptuneAge).toEqual(0.3);
   });
   test('it should calc neptuneYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    newPerson.neptuneYears();
     expect(newPerson.neptuneYearsLeft).toEqual(0.126);
   });
   test('it should calc neptuneYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    newPerson.neptuneYears();
     expect(newPerson.neptuneYearsOver).toEqual(0.024);
   });
 });
