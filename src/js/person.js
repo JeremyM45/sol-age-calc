@@ -41,4 +41,7 @@ export class Person {
       this.lifeExpect -= 4;
     }
   }
+  yearsLeftOrOver() {
+    
+  }
 }

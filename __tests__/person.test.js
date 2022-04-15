@@ -84,3 +84,18 @@ describe('Person.lifeExpectancy', ()  =>  {
     expect(newPerson.lifeExpect).toEqual(68);
   });
 });
+describe('Person.yearsLeftOrOver',  ()  =>  {
+  test('it should calc the how many years left a Person has based on their earthYears and lifeExpect', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.lifeExpectancy();
+    newPerson.yearsLeftOrOver();
+    expect(newPerson.yearsLeft).toEqual(21);
+  });
+  
+  test('it should calc the how many years a Person is over based on their earthYears and lifeExpect', () =>  {
+    const newPerson = new Person(75, "South Asian", 40000);
+    newPerson.lifeExpectancy();
+    newPerson.yearsLeftOrOver();
+    expect(newPerson.yearsOver).toEqual(4);
+  });
+});
