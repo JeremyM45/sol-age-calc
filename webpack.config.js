@@ -24,16 +24,31 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "eslint-loader"
-      }
-    ]
-  }
+        loader: "eslint-loader",
+      },
+      {
+        test: /\.(gif|png|jpe?g)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/images/",
+              esModule: false,
+            },
+          },
+        ],
+      },
+
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+    ],
+  },
 };
