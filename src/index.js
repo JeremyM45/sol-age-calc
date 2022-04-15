@@ -3,10 +3,10 @@ function generateOutput(person, planet) {
   let age = planet + "Age";
   let yearsLeft = planet + "YearsLeft";
   let yearsOver = planet + "YearsOver";
-  if  (person.earthYears < person.lifeExpect) {
+  if  (person.earthAge < person.lifeExpect) {
     let output = `${capitalizeFirstChar(planet)} <br> Age: ${person[age]} <br> Expected Years Left: ${person[yearsLeft]}`;
     return outputName.html(output);
-  } else if (person.earthYears > person.lifeExpect) {
+  } else if (person.earthAge > person.lifeExpect) {
     let output = `${capitalizeFirstChar(planet)} <br> Age: ${person[age]} <br> Expected Years Over: ${person[yearsOver]}`;
     return outputName.html(output);
   }

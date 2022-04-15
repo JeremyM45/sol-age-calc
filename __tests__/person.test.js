@@ -5,7 +5,7 @@ describe('Person',  ()  =>  {
 
   test('it should create a person object with age in Earth years', () =>  {
     const newPerson = new Person(50, "", 0);
-    expect(newPerson.earthYears).toEqual(50);
+    expect(newPerson.earthAge).toEqual(50);
   });
   test('it should create a person object with ethnicity', ()  =>  {
     const newPerson = new Person(0, "East Asian", 0);
@@ -17,7 +17,7 @@ describe('Person',  ()  =>  {
   })
   test('it should create a person object with age, ethnicity, and income',  ()  =>  {
     const newPerson = new Person(50, "East Asian", 50000);
-    expect(newPerson.earthYears).toEqual(50);
+    expect(newPerson.earthAge).toEqual(50);
     expect(newPerson.ethnicity).toEqual("East Asian");
     expect(newPerson.income).toEqual(50000);
   });
@@ -73,18 +73,18 @@ describe('Person.lifeExpectancy', ()  =>  {
   });
 });
 describe('Person.yearsLeftOrOver',  ()  =>  {
-  test('it should calc the how many years left a Person has based on their earthYears and lifeExpect', () =>  {
+  test('it should calc the how many years left a Person has based on their earthAge and lifeExpect', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    expect(newPerson.yearsLeft).toEqual(21);
+    expect(newPerson.earthYearsLeft).toEqual(21);
   });
   
-  test('it should calc the how many years a Person is over based on their earthYears and lifeExpect', () =>  {
+  test('it should calc the how many years a Person is over based on their earthAge and lifeExpect', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    expect(newPerson.yearsOver).toEqual(4);
+    expect(newPerson.earthYearsOver).toEqual(4);
   });
 });
 describe('Person.mercuryYears', ()  =>  {
-  test('it should calc mercuryAge based on earthYears', () =>  {
+  test('it should calc mercuryAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.mercuryAge).toEqual(208)
   });
@@ -98,7 +98,7 @@ describe('Person.mercuryYears', ()  =>  {
   });
 });
 describe('Person.venusYears', ()  =>  {
-  test('it should calc venusAge based on earthYears', () =>  {
+  test('it should calc venusAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.venusAge).toEqual(81);
   });
@@ -112,7 +112,7 @@ describe('Person.venusYears', ()  =>  {
   });
 });
 describe('Person.marsYears', ()  =>  {
-  test('it should calc marsAge based on earthYears', () =>  {
+  test('it should calc marsAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.marsAge).toEqual(27);
   });
@@ -126,7 +126,7 @@ describe('Person.marsYears', ()  =>  {
   });
 });
 describe('Person.jupiterYears', ()  =>  {
-  test('it should calc jupiterAge based on earthYears', () =>  {
+  test('it should calc jupiterAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.jupiterAge).toEqual(4);
   });
@@ -140,7 +140,7 @@ describe('Person.jupiterYears', ()  =>  {
   });
 });
 describe('Person.saturnYears', ()  =>  {
-  test('it should calc saturnAge based on earthYears', () =>  {
+  test('it should calc saturnAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.saturnAge).toEqual(1.69);
   });
@@ -154,7 +154,7 @@ describe('Person.saturnYears', ()  =>  {
   });
 });
 describe('Person.uranusYears', ()  =>  {
-  test('it should calc uranusAge based on earthYears', () =>  {
+  test('it should calc uranusAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.uranusAge).toEqual(0.59);
   });
@@ -168,7 +168,7 @@ describe('Person.uranusYears', ()  =>  {
   });
 });
 describe('Person.neptuneYears', ()  =>  {
-  test('it should calc neptuneAge based on earthYears', () =>  {
+  test('it should calc neptuneAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
     expect(newPerson.neptuneAge).toEqual(0.3);
   });

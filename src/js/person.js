@@ -1,6 +1,6 @@
 export class Person {
   constructor(age, ethnicity, income) {
-    this.earthYears = age;
+    this.earthAge = age;
     this.ethnicity = ethnicity;
     this.income = income;
     this.lifeExpectancy();
@@ -51,66 +51,66 @@ export class Person {
     this.yearsLeftOrOver();
   }
   yearsLeftOrOver() {
-    if (this.earthYears < this.lifeExpect)  {
-      this.yearsLeft =  this.lifeExpect - this.earthYears;
+    if (this.earthAge < this.lifeExpect)  {
+      this.earthYearsLeft =  this.lifeExpect - this.earthAge;
     } else {
-      this.yearsOver = this.earthYears - this.lifeExpect;
+      this.earthYearsOver = this.earthAge - this.lifeExpect;
     }
   }
   mercuryYears()  {
-    this.mercuryAge = Math.round(this.earthYears / 0.24);
-    if  (this.earthYears < this.lifeExpect) {
-      this.mercuryYearsLeft = Math.round(this.yearsLeft / 0.24);
+    this.mercuryAge = Math.round(this.earthAge / 0.24);
+    if  (this.earthAge < this.lifeExpect) {
+      this.mercuryYearsLeft = Math.round(this.earthYearsLeft / 0.24);
     } else {
-      this.mercuryYearsOver = Math.round(this.yearsOver / 0.24);
+      this.mercuryYearsOver = Math.round(this.earthYearsOver / 0.24);
     }
   }
   venusYears()  {
-    this.venusAge = Math.round(this.earthYears / 0.62);
-    if  (this.earthYears < this.lifeExpect) {
-      this.venusYearsLeft = Math.round(this.yearsLeft / 0.62);
+    this.venusAge = Math.round(this.earthAge / 0.62);
+    if  (this.earthAge < this.lifeExpect) {
+      this.venusYearsLeft = Math.round(this.earthYearsLeft / 0.62);
     } else {
-      this.venusYearsOver = Math.round(this.yearsOver / 0.62);
+      this.venusYearsOver = Math.round(this.earthYearsOver / 0.62);
     }
   }
   marsYears() {
-    this.marsAge = Math.round(this.earthYears / 1.88);
-    if  (this.earthYears < this.lifeExpect) {
-      this.marsYearsLeft = Math.round(this.yearsLeft / 1.88);
+    this.marsAge = Math.round(this.earthAge / 1.88);
+    if  (this.earthAge < this.lifeExpect) {
+      this.marsYearsLeft = Math.round(this.earthYearsLeft / 1.88);
     } else {
-      this.marsYearsOver = Math.round(this.yearsOver / 1.88);
+      this.marsYearsOver = Math.round(this.earthYearsOver / 1.88);
     }
   }
   jupiterYears()  {
-    this.jupiterAge = Math.round(this.earthYears / 11.86);
-    if  (this.earthYears < this.lifeExpect) {
-      this.jupiterYearsLeft = Math.round(this.yearsLeft / 11.86);
+    this.jupiterAge = Math.round(this.earthAge / 11.86);
+    if  (this.earthAge < this.lifeExpect) {
+      this.jupiterYearsLeft = Math.round(this.earthYearsLeft / 11.86);
     } else  {
-      this.jupiterYearsOver = parseFloat((this.yearsOver / 11.86).toFixed(2));
+      this.jupiterYearsOver = parseFloat((this.earthYearsOver / 11.86).toFixed(2));
     }
   }
   saturnYears() {
-    this.saturnAge = parseFloat((this.earthYears / 29.5).toFixed(2));
-    if  (this.earthYears < this.lifeExpect) {
-      this.saturnYearsLeft = parseFloat((this.yearsLeft / 29.5).toFixed(2));
+    this.saturnAge = parseFloat((this.earthAge / 29.5).toFixed(2));
+    if  (this.earthAge < this.lifeExpect) {
+      this.saturnYearsLeft = parseFloat((this.earthYearsLeft / 29.5).toFixed(2));
     } else  {
-      this.saturnYearsOver = parseFloat((this.yearsOver / 29.5).toFixed(2));
+      this.saturnYearsOver = parseFloat((this.earthYearsOver / 29.5).toFixed(2));
     }
   }
   uranusYears() {
-    this.uranusAge = parseFloat((this.earthYears / 84.75).toFixed(2));
-    if  (this.earthYears < this.lifeExpect) {
-      this.uranusYearsLeft = parseFloat((this.yearsLeft / 84.75).toFixed(2));
+    this.uranusAge = parseFloat((this.earthAge / 84.75).toFixed(2));
+    if  (this.earthAge < this.lifeExpect) {
+      this.uranusYearsLeft = parseFloat((this.earthYearsLeft / 84.75).toFixed(2));
     } else  {
-      this.uranusYearsOver = parseFloat((this.yearsOver / 84.75).toFixed(2));
+      this.uranusYearsOver = parseFloat((this.earthYearsOver / 84.75).toFixed(2));
     }
   }
   neptuneYears()  {
-    this.neptuneAge = parseFloat((this.earthYears / 166.67).toFixed(2));
-    if  (this.earthYears < this.lifeExpect) {
-      this.neptuneYearsLeft = parseFloat((this.yearsLeft / 166.67).toFixed(3));
+    this.neptuneAge = parseFloat((this.earthAge / 166.67).toFixed(2));
+    if  (this.earthAge < this.lifeExpect) {
+      this.neptuneYearsLeft = parseFloat((this.earthYearsLeft / 166.67).toFixed(3));
     } else  {
-      this.neptuneYearsOver = parseFloat((this.yearsOver / 166.67).toFixed(3));
+      this.neptuneYearsOver = parseFloat((this.earthYearsOver / 166.67).toFixed(3));
     }
   }
 }
