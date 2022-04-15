@@ -61,5 +61,6 @@ export class Person {
   venusYears()  {
     this.venusAge = Math.round(this.earthYears / 0.62);
     this.venusYearsLeft = Math.round(this.yearsLeft / 0.62);
+    this.venusYearsOver = Math.round(this.yearsOver / 0.62);
   }
 }
