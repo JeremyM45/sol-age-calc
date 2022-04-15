@@ -100,3 +100,20 @@ describe('Person.mercuryYears', ()  =>  {
     expect(newPerson.mercuryYearsOver).toEqual(17);
   });
 });
+describe('Person.venusYears', ()  =>  {
+  test('it should calc venusAge based on earthYears', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.venusYears()
+    expect(newPerson.venusAge).toEqual(81)
+  });
+  test('it should calc venusYearsLeft based on yearsLeft', () =>  {
+    const newPerson = new Person(50, "South Asian", 40000);
+    newPerson.venusYears()
+    expect(newPerson.venusYearsLeft).toEqual(34);
+  });
+  test('it should calc venusYearsOver based on yearsOver', () =>  {
+    const newPerson = new Person(75, "South Asian", 40000);
+    newPerson.venusYears()
+    expect(newPerson.venusYearsOver).toEqual(6);
+  });
+});

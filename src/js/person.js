@@ -58,4 +58,7 @@ export class Person {
       this.mercuryYearsOver = Math.round(this.yearsOver / 0.24);
     }
   }
+  venusYears()  {
+    
+  }
 }
