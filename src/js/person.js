@@ -16,6 +16,9 @@ export class Person {
       case "East Asian":
         this.lifeExpect = 80;
         break;
+      case "North African":
+        this.lifeExpect = 75;
+        break;
     }
   }
 }

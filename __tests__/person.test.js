@@ -48,10 +48,10 @@ describe('Person.lifeExpectancy', ()  =>  {
     newPerson.lifeExpectancy();
     expect(newPerson.lifeExpect).toEqual(75);
   });
-  test('it should decrease lifeExpect to 62 with "Sub-Saharan African" ethnicity',  ()  =>  {
+  test('it should decrease lifeExpect to 64 with "Sub-Saharan African" ethnicity',  ()  =>  {
     const newPerson = new Person(0, "Sub-Saharan African", 40000);
     newPerson.lifeExpectancy();
-    expect(newPerson.lifeExpect).toEqual(62);
+    expect(newPerson.lifeExpect).toEqual(64);
   });
   test('it should increase lifeExpect to 79 with "Western European" ethnicity',  ()  =>  {
     const newPerson = new Person(0, "Western European", 40000);
