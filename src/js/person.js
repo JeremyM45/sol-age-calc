@@ -52,7 +52,10 @@ export class Person {
   }
   mercuryYears()  {
     this.mercuryAge = Math.round(this.earthYears / 0.24);
-    this.mercuryYearsLeft = Math.round(this.yearsLeft / 0.24);
-    this.mercuryYearsOver = Math.round(this.yearsOver / 0.24);
+    if  (this.earthYears < this.lifeExpect) {
+      this.mercuryYearsLeft = Math.round(this.yearsLeft / 0.24);
+    } else {
+      this.mercuryYearsOver = Math.round(this.yearsOver / 0.24);
+    }
   }
 }
