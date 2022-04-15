@@ -106,6 +106,7 @@ export class Person {
     }
   }
   neptuneYears()  {
-    
+    this.neptuneAge = (this.earthYears / 166.67).toFixed(2);
+    this.neptuneAge = parseFloat(this.neptuneAge);
   }
 }
