@@ -79,35 +79,27 @@ export class Person {
     if  (this.earthYears < this.lifeExpect) {
       this.jupiterYearsLeft = Math.round(this.yearsLeft / 11.86);
     } else  {
-      this.jupiterYearsOver = (this.yearsOver / 11.86).toFixed(2)
-      this.jupiterYearsOver = parseFloat(this.jupiterYearsOver);
+      this.jupiterYearsOver = parseFloat((this.yearsOver / 11.86).toFixed(2));
     }
   }
   saturnYears() {
-    this.saturnAge = (this.earthYears / 29.5).toFixed(2);
-    this.saturnAge = parseFloat(this.saturnAge);
+    this.saturnAge = parseFloat((this.earthYears / 29.5).toFixed(2));
     if  (this.earthYears < this.lifeExpect) {
-      this.saturnYearsLeft = (this.yearsLeft / 29.5).toFixed(2);
-      this.saturnYearsLeft = parseFloat(this.saturnYearsLeft);
+      this.saturnYearsLeft = parseFloat((this.yearsLeft / 29.5).toFixed(2));
     } else  {
-      this.saturnYearsOver = (this.yearsOver / 29.5).toFixed(2);
-      this.saturnYearsOver = parseFloat(this.saturnYearsOver);
+      this.saturnYearsOver = parseFloat((this.yearsOver / 29.5).toFixed(2));
     }
   }
   uranusYears() {
-    this.uranusAge = (this.earthYears / 84.75).toFixed(2);
-    this.uranusAge = parseFloat(this.uranusAge);
+    this.uranusAge = parseFloat((this.earthYears / 84.75).toFixed(2));
     if  (this.earthYears < this.lifeExpect) {
-      this.uranusYearsLeft = (this.yearsLeft / 84.75).toFixed(2);
-      this.uranusYearsLeft = parseFloat(this.uranusYearsLeft);
+      this.uranusYearsLeft = parseFloat((this.yearsLeft / 84.75).toFixed(2));
     } else  {
-      this.uranusYearsOver = (this.yearsOver / 84.75).toFixed(2);
-      this.uranusYearsOver = parseFloat(this.uranusYearsOver);
+      this.uranusYearsOver = parseFloat((this.yearsOver / 84.75).toFixed(2));
     }
   }
   neptuneYears()  {
-    this.neptuneAge = (this.earthYears / 166.67).toFixed(2);
-    this.neptuneAge = parseFloat(this.neptuneAge);
+    this.neptuneAge = parseFloat((this.earthYears / 166.67).toFixed(2));
     if  (this.earthYears < this.lifeExpect) {
       this.neptuneYearsLeft = parseFloat((this.yearsLeft / 166.67).toFixed(3));
     } else  {
