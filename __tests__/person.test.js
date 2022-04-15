@@ -148,6 +148,6 @@ describe('Person.jupiterYears', ()  =>  {
   test('it should calc jupiterYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
     newPerson.jupiterYears();
-    expect(newPerson.jupiterYearsOver).toEqual(0.33);
+    expect(newPerson.jupiterYearsOver).toEqual(0.34);
   });
 });
