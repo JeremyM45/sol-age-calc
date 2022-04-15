@@ -59,6 +59,6 @@ export class Person {
     }
   }
   venusYears()  {
-    
+    this.venusAge = Math.round(this.earthYears / 0.62);
   }
 }
