@@ -24,7 +24,7 @@ describe('Person',  ()  =>  {
 })
 describe('Person.lifeExpectancy', ()  =>  {
   test('it should create lifeExpect starting at 72 for Person object', ()  =>  {
-    const newPerson = new Person(0, "", 0);
+    const newPerson = new Person(0, "", 40000);
     newPerson.lifeExpectancy();
     expect(newPerson.lifeExpect).toEqual(72);
   });
