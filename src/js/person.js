@@ -6,5 +6,10 @@ export class Person {
   }
   lifeExpectancy()  {
     this.lifeExpect = 72
+    switch(this.ethnicity)  {
+      case "West Asian":
+        this.lifeExpect = 77;
+        break;
+    }
   }
 }
