@@ -44,6 +44,8 @@ export class Person {
   yearsLeftOrOver() {
     if (this.earthYears < this.lifeExpect)  {
       this.yearsLeft =  this.lifeExpect - this.earthYears
+    } else if (this.earthYears > this.lifeExpect) {
+      this.yearsOver = this.earthYears - this.lifeExpect
     }
   }
 }
