@@ -5,6 +5,6 @@ export class Person {
     this.income = income
   }
   lifeExpectancy()  {
-    
+    this.lifeExpect = 72
   }
 }
