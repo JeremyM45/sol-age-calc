@@ -97,9 +97,12 @@ export class Person {
   uranusYears() {
     this.uranusAge = (this.earthYears / 84.75).toFixed(2);
     this.uranusAge = parseFloat(this.uranusAge);
-    this.uranusYearsLeft = (this.yearsLeft / 84.75).toFixed(2);
-    this.uranusYearsLeft = parseFloat(this.uranusYearsLeft);
-    this.uranusYearsOver = (this.yearsOver / 84.75).toFixed(2);
-    this.uranusYearsOver = parseFloat(this.uranusYearsOver);
+    if  (this.earthYears < this.lifeExpect) {
+      this.uranusYearsLeft = (this.yearsLeft / 84.75).toFixed(2);
+      this.uranusYearsLeft = parseFloat(this.uranusYearsLeft);
+    } else  {
+      this.uranusYearsOver = (this.yearsOver / 84.75).toFixed(2);
+      this.uranusYearsOver = parseFloat(this.uranusYearsOver);
+    }
   }
 }
