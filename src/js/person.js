@@ -95,6 +95,7 @@ export class Person {
     }
   }
   uranusYears() {
-    
+    this.uranusAge = (this.earthYears / 84.75).toFixed(2);
+    this.uranusAge = parseFloat(this.uranusAge);
   }
 }
