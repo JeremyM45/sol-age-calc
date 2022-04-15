@@ -51,6 +51,6 @@ export class Person {
     }
   }
   mercuryYears()  {
-    
+    this.mercuryAge = Math.round(this.earthYears / 0.24);
   }
 }

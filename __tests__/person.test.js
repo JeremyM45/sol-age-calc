@@ -95,7 +95,7 @@ describe('Person.mercuryYears', ()  =>  {
     expect(newPerson.mercuryYearsLeft).toEqual(86);
   });
   test('it should calc mercuryYearsOver based on yearsOver', () =>  {
-    const newPerson = new Person(50, "South Asian", 40000);
+    const newPerson = new Person(75, "South Asian", 40000);
     newPerson.mercuryYears()
     expect(newPerson.mercuryYearsOver).toEqual(17);
   });
