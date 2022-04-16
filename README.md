@@ -59,7 +59,7 @@ This webpage has an input fields to input your age, region, and income. Once doi
 
   
 
-* Once in the top level of directory (./sol-age-calc) install npm by typing "install npm" in terminal
+* Once in the top level of directory (./sol-age-calc) install npm by typing "npm install" in terminal
 
   
 
