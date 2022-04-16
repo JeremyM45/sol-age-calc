@@ -128,11 +128,11 @@ describe('Person.marsYears', ()  =>  {
 describe('Person.jupiterYears', ()  =>  {
   test('it should calc jupiterAge based on earthAge', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    expect(newPerson.jupiterAge).toEqual(4);
+    expect(newPerson.jupiterAge).toEqual(4.22);
   });
   test('it should calc jupiterYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    expect(newPerson.jupiterYearsLeft).toEqual(2);
+    expect(newPerson.jupiterYearsLeft).toEqual(1.77);
   });
   test('it should calc jupiterYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
@@ -160,11 +160,11 @@ describe('Person.uranusYears', ()  =>  {
   });
   test('it should calc uranusYearsLeft based on yearsLeft', () =>  {
     const newPerson = new Person(50, "South Asian", 40000);
-    expect(newPerson.uranusYearsLeft).toEqual(0.25);
+    expect(newPerson.uranusYearsLeft).toEqual(0.248);
   });
   test('it should calc uranusYearsOver based on yearsOver', () =>  {
     const newPerson = new Person(75, "South Asian", 40000);
-    expect(newPerson.uranusYearsOver).toEqual(0.05);
+    expect(newPerson.uranusYearsOver).toEqual(0.047);
   });
 });
 describe('Person.neptuneYears', ()  =>  {

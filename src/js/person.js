@@ -82,9 +82,9 @@ export class Person {
     }
   }
   jupiterYears()  {
-    this.jupiterAge = Math.round(this.earthAge / 11.86);
+    this.jupiterAge = parseFloat((this.earthAge / 11.86).toFixed(2));
     if  (this.earthAge < this.lifeExpect) {
-      this.jupiterYearsLeft = Math.round(this.earthYearsLeft / 11.86);
+      this.jupiterYearsLeft = parseFloat((this.earthYearsLeft / 11.86).toFixed(2));
     } else  {
       this.jupiterYearsOver = parseFloat((this.earthYearsOver / 11.86).toFixed(2));
     }
@@ -100,9 +100,9 @@ export class Person {
   uranusYears() {
     this.uranusAge = parseFloat((this.earthAge / 84.75).toFixed(2));
     if  (this.earthAge < this.lifeExpect) {
-      this.uranusYearsLeft = parseFloat((this.earthYearsLeft / 84.75).toFixed(2));
+      this.uranusYearsLeft = parseFloat((this.earthYearsLeft / 84.75).toFixed(3));
     } else  {
-      this.uranusYearsOver = parseFloat((this.earthYearsOver / 84.75).toFixed(2));
+      this.uranusYearsOver = parseFloat((this.earthYearsOver / 84.75).toFixed(3));
     }
   }
   neptuneYears()  {
