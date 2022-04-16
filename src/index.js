@@ -4,10 +4,10 @@ function generateOutput(person, planet) {
   let yearsLeft = planet + "YearsLeft";
   let yearsOver = planet + "YearsOver";
   if  (person.earthAge < person.lifeExpect) {
-    let output = `<img src='assets/images/${planet}.jpg' alt='${planet}' <br> <br> ${capitalizeFirstChar(planet)} <br> Age: ${person[age]} <br> Expected Years Left: ${person[yearsLeft]}`;
+    let output = `<img src='./assets/images/${planet}.jpg' alt='${planet}'> <br> <b>${capitalizeFirstChar(planet)}</b> <br> Age: ${person[age]} <br> Expected Years Left: ${person[yearsLeft]}`;
     return outputName.html(output);
   } else if (person.earthAge > person.lifeExpect) {
-    let output = `<img src='assets/images/${planet}.jpg' alt='${planet}' <br> <br> ${capitalizeFirstChar(planet)} <br> Age: ${person[age]} <br> Expected Years Over: ${person[yearsOver]}`;
+    let output = `<img src='assets/images/${planet}.jpg' alt='${planet}'> <br> <b>${capitalizeFirstChar(planet)}</b> <br> Age: ${person[age]} <br> Expected Years Over: ${person[yearsOver]}`;
     return outputName.html(output);
   }
 }
@@ -37,3 +37,11 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import './assets/images/mercury.jpg';
+import './assets/images/venus.jpg';
+import './assets/images/earth.jpg';
+import './assets/images/mars.jpg';
+import './assets/images/jupiter.jpg';
+import './assets/images/saturn.jpg';
+import './assets/images/uranus.jpg';
+import './assets/images/neptune.jpg';
