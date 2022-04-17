@@ -35,7 +35,9 @@
 
 * Babel
 
-* Json
+* JSON
+
+* Jest
 
   
 
